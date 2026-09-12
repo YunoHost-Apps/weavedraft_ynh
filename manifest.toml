@@ -1,0 +1,58 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/main/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "weavedraft"
+name = "WeaveDraft"
+description.en = "Design weaving patterns;threading, tie-up and pedalling"
+description.fr = "Créez des motifs de tissage ; enfilage, montage et pédalage"
+
+version = "1.0~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "MIT"
+demo = "https://www.gammon.com.au/weavedraft/"
+
+[integration]
+yunohost = ">= 12.1.40"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/weavedraft"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+    [install.language]
+    ask.en = "Choose the application language"
+    ask.fr = "Choisissez la langue de l'application"
+    type = "select"
+    choices = ["fr", "en"]
+    default = "fr"
+
+[resources]
+
+    [resources.system_user]
+
+    [resources.install_dir]
+    group = "www-data:r-x"
+
+    [resources.permissions]
+    main.url = "/"
