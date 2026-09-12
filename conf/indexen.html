@@ -311,8 +311,8 @@ function defaultState () {
     version: 2,
     shafts: 4,
     pedals: 6,
-    warpCount: 40,
-    weftCount: 24,
+    warpCount: 70,
+    weftCount: 40,
     threading: [],        // per warp thread: shaft index (0-based) or UNSET
     warpColour: [],       // per warp thread: hex colour
     pedalling: [],        // per weft row (row 0 at the bottom): array of
@@ -322,7 +322,7 @@ function defaultState () {
     palette: ["#00cc00", "#005500", "#990000", "#ee0000", "#ffff00",
               "#ffffcc", "#884400", "#ff9900", "#0000aa", "#ff00ff"],
     sparePalette: [],     // colours put aside when the palette is shrunk
-    currentColour: 8,     // index into palette (blue)
+    currentColour: 16,     // index into palette (blue)
     multiPedal: false,    // allow more than one pedal per weft row
     reverse: false
   };
