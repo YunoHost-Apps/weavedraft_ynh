@@ -4,7 +4,7 @@ packaging_format = 2
 
 id = "weavedraft"
 name = "WeaveDraft"
-description.en = "Design weaving patterns;threading, tie-up and pedalling"
+description.en = "Design weaving patterns; threading, tie-up and pedalling"
 description.fr = "Créez des motifs de tissage ; enfilage, montage et pédalage"
 
 version = "1.0~ynh1"
