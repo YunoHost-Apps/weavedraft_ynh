@@ -8,7 +8,7 @@ It shall NOT be edited by hand.
   WeaveDraft, packaged for YunoHost
 </h1>
 
-Design weaving patterns; threading, tie-up and pedalling
+Design weaving patterns, threading, tie-up and pedalling
 
 [![App Demo](https://img.shields.io/badge/App_Demo-blue?style=for-the-badge)](https://www.gammon.com.au/weavedraft/)
 [![Version: 1.0~ynh1](https://img.shields.io/badge/Version-1.0~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/weavedraft/)
